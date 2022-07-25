@@ -1,4 +1,4 @@
-# **HangMan**
+# **Hero's/Villain's**
 
 ---
 
