@@ -1,14 +1,12 @@
 const { Schema } = require("mongoose");
 
-const Villain = new Schema(
+const Organization = new Schema(
   {
     name: { type: String, required: true },
     otherName: { type: String },
-    age: { type: Number },
-    aliveOrDeath: { type: String },
-    mainEnemies: { type: String },
+    episodes: { type: Number}
   },
   { timestamps: true }
 );
 
-module.exports = Villain;
+module.exports = Organization;
