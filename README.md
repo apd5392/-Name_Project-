@@ -32,7 +32,7 @@ An app that allows people to
 
 # **Component Heirarchy:**
 
-[Component Heirarchy:]()
+![Component Heirarchy:](https://imgur.com/a/YgqTkN5)
 
 ---
 # **ERD**
