@@ -2,7 +2,7 @@
 
 ---
 
-## 7/4/22
+## 7/24/22
 
 ## By Adama Doumbia
 
@@ -11,7 +11,7 @@
 ---
 
 # **_Description_**
-An app that allows people to 
+An app that allows people to look up different heroes and villains from select animes and see what group/organization a character is part of and how many epsiodes they were in.
 
 ---
 
@@ -36,7 +36,7 @@ An app that allows people to
 ---
 # **ERD**
 
-[ERD]()
+![ERD](https://i.imgur.com/l38xZ3f.png)
 
 ---
 
