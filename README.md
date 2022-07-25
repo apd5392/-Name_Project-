@@ -1,4 +1,4 @@
-# ** Anime List **
+# **Anime List**
 
 ---
 
