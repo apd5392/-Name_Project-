@@ -11,7 +11,7 @@
 ---
 
 # **_Description_**
-
+An app that allows people to 
 
 ---
 
@@ -46,5 +46,21 @@
 [Trello]()
 
 ---
+
+## MVP
+
+- 
+- 
+- 
+- 
+
+---
+
+## Post MVP
+
+- 
+- 
+- 
+- 
 
 # **Credit**
