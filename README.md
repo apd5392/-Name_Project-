@@ -11,7 +11,7 @@
 ---
 
 # **_Description_**
-An app that allows people to look up different heroes and villains from select animes and see what group/organization a character is part of and how many epsiodes they were in.
+An app that allows people to look up different heroes and villains from select animes and see what group/organization a character is part of and other details.
 
 ---
 
