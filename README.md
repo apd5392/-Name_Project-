@@ -36,7 +36,7 @@ An app that allows people to look up different heroes and villains from select a
 ---
 # **ERD**
 
-![ERD]([img]https://i.imgur.com/l38xZ3f.png)
+![ERD](https://i.imgur.com/l38xZ3f.png)
 
 ---
 
