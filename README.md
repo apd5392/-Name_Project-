@@ -36,30 +36,23 @@ An app that allows people to look up different heroes and villains from select a
 ---
 # **ERD**
 
-![ERD](https://i.imgur.com/l38xZ3f.png)
+![ERD]([img]https://i.imgur.com/l38xZ3f.png)
 
 ---
 
 # **Trello**
 
-[Trello]()
+[Trello](https://trello.com/invite/b/x8gEINk3/c12b5f6803d882de8f434cc403fa128d/anime-list)
 
 ---
 
 ## MVP
 
-- 
-- 
-- 
-- 
+- Homepage/Welcome Page
+- Navbar to switch between pages
+- Each Hero/Villain/Organization will be linked to each other (if they have association)
+- Search Bar to quickly look up a hero/villain/organization
 
 ---
-
-## Post MVP
-
-- 
-- 
-- 
-- 
 
 # **Credit**
