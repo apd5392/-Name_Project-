@@ -8,8 +8,6 @@ export default function OrganizationCard(props) {
         <h2>Name: {props.name}</h2>
         <h3>Leader: {props.leader}</h3>
         <h3>Members: {props.members} </h3>
-        <h3>Enemies: {props.enemies}</h3>
-
       </div>
     );
   }
