@@ -20,11 +20,11 @@ router.post("/animes", controllers.createAnime);
 router.post("/organizations", controllers.createOrganization);
 
 //Update Routes
-router.post('/heroes/:id', controllers.updateHero)
+router.put('/heroes/:id', controllers.updateHero)
 
 
 //Delete Routes
-// router.delete("/heroes", controllers.);
+router.delete("/heroes/:id", controllers.deleteHero);
 
 
 

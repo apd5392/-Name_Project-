@@ -9,49 +9,41 @@ const main = async () => {
       name: "Frieza Force",
       leader: "Frieza",
       members: "",
-      enemies: "",
     },
     {
       name: "Team Universe 7",
       leader: "Beerus",
       members: "",
-      enemies: "",
     },
     {
       name: "Galactic Patrol",
       leader: "Galactic King",
       members: "",
-      enemies: "",
     },
     {
       name: "Dragon Team",
       leader: "Goku",
       members: "",
-      enemies: "",
     },
     {
       name: "Saiya Squad",
-      leader: "Great Saiyaman",
+      leader: "Great Saiyaman(Gohan)",
       members: "",
-      enemies: "",
     },
     {
       name: "Time Patrol",
       leader: "Future Trunks",
       members: "",
-      enemies: "",
     },
     {
       name: "Capsule Corporation",
       leader: "Bulma",
       members: "",
-      enemies: "",
     },
     {
-      name: "Kikoukenjutsu Sword School",
-      leader: ["Goten", "Trunks"],
+      name: "Organization of Babidi",
+      leader: ["Bibidi, ", "Babidi"],
       members: "",
-      enemies: "",
     },
   ];
   await Organization.deleteMany();

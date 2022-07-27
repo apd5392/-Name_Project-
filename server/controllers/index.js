@@ -106,14 +106,27 @@ const getHeroId = async (req, res) => {
 
 const updateHero = async (req, res) => {
   try {
-    const heroId = req.params.objectId;
-    const updatedHero = await Hero.update(req.body, {
-      where: { id: heroId },
-      returning: true,
-    });
-    res.send(updatedHero);
+    const hero = req.body;
+    console.log(req.body);
+    const rest = await Hero.findByIdAndUpdate(req.params.id, hero);
+    if (!rest) {
+      res.status(500).send("Hero not found");
+    }
+    return res.status(200).json(rest);
   } catch (error) {
-    throw error;
+    return res.status(500).send(error.message);
+  }
+};
+
+const deleteHero = async (req, res) => {
+  try {
+    const deleted = await Hero.findByIdAndDelete(req.params.id);
+    if (deleted) {
+      return res.send({ msg: `Hero deleted` });
+    }
+    throw new Error("Hero not found");
+  } catch (error) {
+    return res.status(500).send(error.message);
   }
 };
 
@@ -136,5 +149,6 @@ module.exports = {
   getAllOrganizations,
   getAllAnimes,
   getHeroId,
-  updateHero
+  updateHero,
+  deleteHero
 };
