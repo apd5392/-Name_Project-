@@ -1,7 +1,8 @@
 const { Schema } = require("mongoose");
 
-const Organization = new Schema(
+const Anime = new Schema(
   {
+    image: { type: String },
     name: { type: String, required: true },
     otherName: { type: String },
     episodes: { type: Number}
@@ -9,4 +10,4 @@ const Organization = new Schema(
   { timestamps: true }
 );
 
-module.exports = Organization;
+module.exports = Anime;

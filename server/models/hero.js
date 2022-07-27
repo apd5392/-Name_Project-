@@ -4,11 +4,11 @@ const Hero = new Schema(
   {
     image: { type: String },
     name: { type: String, required: true },
-    otherName: { type: Array },
-    anime: {type: Array},
+    otherName: [{ type: String }],
+    anime: [{type: String}],
     age: { type: Number },
     aliveOrDeath: { type: String },
-    organizations: { type: Array },
+    organizations: [{ type: String }],
   },
   { timestamps: true }
 );

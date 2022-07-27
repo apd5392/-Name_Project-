@@ -4,10 +4,10 @@ const HeroSchema = require("./hero");
 const VillainSchema = require("./villain");
 const OrganizationSchema = require("./organization");
 
-const Anime = model("Ride", AnimeSchema);
-const Hero = model("Park", HeroSchema);
-const Villain = model("Shop", VillainSchema);
-const Organization = model("Restaurant", OrganizationSchema);
+const Anime = model("Anime", AnimeSchema);
+const Hero = model("Hero", HeroSchema);
+const Villain = model("Villain", VillainSchema);
+const Organization = model("Organization", OrganizationSchema);
 
 module.exports = {
   Anime,
