@@ -8,25 +8,21 @@ const main = async () => {
     {
       image: "https://i.imgur.com/TKAfhRp.png",
       name: "Dragon Ball",
-      otherName: "",
       episodes: 153,
     },
     {
       image: "https://i.imgur.com/vClUJGr.png",
       name: "Dragon Ball Z",
-      otherName: "",
       episodes: 291,
     },
     {
       image: "https://i.imgur.com/GbWvvU6.png",
       name: "Dragon Ball Super",
-      otherName: "",
       episodes: 131,
     },
     {
       image: "https://i.imgur.com/dV3fi4q.png",
       name: "Dragon Ball GT",
-      otherName: "",
       episodes: 64,
     },
   ];

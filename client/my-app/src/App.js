@@ -6,8 +6,8 @@ import Animes from './pages/Animes';
 import Heroes from './pages/Heroes';
 import Villains from './pages/Villains';
 import Organizations from './pages/Organizations';
-const API = 'http.//localhost:3001'
 
+const API = 'http.//localhost:3001'
 
 function App() {
   return (

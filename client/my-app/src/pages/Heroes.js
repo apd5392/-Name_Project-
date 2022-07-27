@@ -1,10 +1,10 @@
+import '../Heroes.css';
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import HeroCard from '../components/HeroCard'
 
 const Heroes = () => {
     const [heroes, setHero] = useState([]);
-  
     useEffect(() => {
       const fetchHero = async () => {
         try {
@@ -22,21 +22,19 @@ const Heroes = () => {
       return <h1>Loading Please Wait!</h1>
     } else {
       return (
-        <div className="div">
+        <div className="heroDiv">
           {heroes.map((hero) => (
-            <HeroCard
+            <HeroCard className="heroCardDiv"
               name={hero.name}
               image={hero.image}
               otherName={hero.otherName}
               anime={hero.anime}
               age={hero.age}
-              mortality={hero.aliveOrDeath}
-              organization={hero.organizations}
+              organizations={hero.organizations}
             />
           ))}
         </div>
       );
     }
   };
-  
   export default Heroes;

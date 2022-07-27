@@ -1,3 +1,4 @@
+import '../Anime.css';
 import { useState, useEffect } from "react";
 import axios from "axios";
 import AnimeCard from "../components/AnimeCard";
@@ -22,12 +23,11 @@ const Animes = () => {
     return <h1>Loading Please Wait!</h1>
   } else {
     return (
-      <div className="div">
+      <div className="animeDiv">
         {animes.map((anime) => (
-          <AnimeCard
+          <AnimeCard className="AnimeCardDiv"
             name={anime.name}
             image={anime.image}
-            otherName={anime.otherName}
             episodes={anime.episodes}
           />
         ))}

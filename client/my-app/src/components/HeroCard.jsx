@@ -6,12 +6,14 @@ export default function HeroCard(props) {
     return (
       <div>
         <img src={props.image}/>
-        <h2>Name: {props.name}</h2>
-        <h3>Other Names: {props.otherName}</h3>
-        <h3>Anime's: {props.anime}</h3>
-        <h3>Age: {props.age}</h3>
-        <h3>Mortality Status: {props.aliveOrDeath}</h3>
-        <h3>Organizations: {props.organizations}</h3>
+        <h2>{props.name}</h2>
+        <h3 className="h3Age">Age: {props.age}</h3>
+        <h3 className="h3heading">Other Names:</h3>
+        <h3>{props.otherName}</h3>
+        <h3 className="h3heading">Anime Series:</h3>
+        <h3>{props.anime}</h3>
+        <h3 className="h3heading">Groups: </h3>
+        <h3>{props.organizations}</h3>
       </div>
     );
   }
