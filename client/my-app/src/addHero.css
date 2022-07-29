@@ -1,4 +1,10 @@
 .Form{
     background-color: skyblue;
-    display: flexbox;
+}
+.inputTitles{
+    padding: 30%;
+    text-decoration: underline;
+}
+button{
+    margin-top: 20px;
 }

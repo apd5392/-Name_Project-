@@ -1,4 +1,4 @@
-import '../addHero.css';
+import "../addHero.css";
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -59,24 +59,30 @@ export default function AddHero() {
   return (
     <div className="Form">
       <form onSubmit={handleSubmit}>
-        <label>Name: </label>
+        <h2>Hero Information:</h2>
+        <label className="inputTitles">Name: </label>
         <input type="text" value={name} onChange={handleNameChange}></input>
-        <label>Other Names: </label>
+        <br></br>
+        <label className="inputTitles">Other Names: </label>
         <input
           type="text"
           value={otherName}
           onChange={handleotherNameChange}
         ></input>
-        <label>Anime's: </label>
+        <br></br>
+        <label className="inputTitles">Anime's: </label>
         <input type="text" value={anime} onChange={handleAnimeChange}></input>
-        <label>Age: </label>
+        <br></br>
+        <label className="inputTitles">Age: </label>
         <input type="text" value={age} onChange={handleAgeChange}></input>
-        <label>Groups: </label>
+        <br></br>
+        <label className="inputTitles">Groups: </label>
         <input
           type="text"
           value={organizations}
           onChange={handleOrganizationChange}
         ></input>
+        <br></br>
         <button type="submit">Add Hero</button>
       </form>
     </div>
