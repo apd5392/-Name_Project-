@@ -109,6 +109,9 @@ const updateHero = async (req, res) => {
     const hero = req.body;
     console.log(req.body);
     const rest = await Hero.findByIdAndUpdate(req.params.id, hero);
+    if (hero) {
+      return res.send({ msg: `Hero Updated` });
+    }
     if (!rest) {
       res.status(500).send("Hero not found");
     }
@@ -165,5 +168,5 @@ module.exports = {
   getHeroId,
   updateHero,
   updateVillain,
-  deleteHero
+  deleteHero,
 };

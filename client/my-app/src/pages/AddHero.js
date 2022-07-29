@@ -57,12 +57,12 @@ export default function AddHero() {
       addheroDB();
       console.log("submit");
       setSubmitted(false);
-      setName("")
-      setAge("")
-      setAnime("")
-      setOrganization("")
-      setOtherName("")
-      setimage("")
+      setName("");
+      setAge("");
+      setAnime("");
+      setOrganization("");
+      setOtherName("");
+      setimage("");
     } else {
       console.log("Nothing");
     }
@@ -73,32 +73,50 @@ export default function AddHero() {
       <form onSubmit={handleSubmit}>
         <h2>Hero Information:</h2>
         <div className="userInputs">
-          <label className="inputTitles">Image link (use imgur)</label>
-          <input type="text" value={image} onChange={imageChange}></input>
-          <br></br>
-          <label className="inputTitles">Name: </label>
-          <input type="text" value={name} onChange={handleNameChange}></input>
-          <br></br>
-          <label className="inputTitles">Other Names: </label>
           <input
             type="text"
+            placeholder="Imgur Link"
+            value={image}
+            onChange={imageChange}
+          ></input>
+          <br></br>
+          <input
+            type="text"
+            placeholder="Hero Name*"
+            value={name}
+            required = {true}
+            onChange={handleNameChange}
+          ></input>
+          <br></br>
+          <input
+            type="text"
+            placeholder="Secondary Names"
             value={otherName}
             onChange={handleotherNameChange}
           ></input>
           <br></br>
-          <label className="inputTitles">Anime's: </label>
-          <input type="text" value={anime} onChange={handleAnimeChange}></input>
-          <br></br>
-          <label className="inputTitles">Age: </label>
-          <input type="text" value={age} onChange={handleAgeChange}></input>
-          <br></br>
-          <label className="inputTitles">Groups: </label>
           <input
             type="text"
+            placeholder="Anime's"
+            value={anime}
+            onChange={handleAnimeChange}
+          ></input>
+          <br></br>
+          <input
+            type="text"
+            value={age}
+            placeholder="Hero's Age"
+            onChange={handleAgeChange}
+          ></input>
+          <br></br>
+          <input
+            type="text"
+            placeholder="Groups"
             value={organizations}
             onChange={handleOrganizationChange}
           ></input>
         </div>
+        <p>* = required for submission</p>
         <br></br>
         <button type="submit">Add Hero</button>
       </form>
