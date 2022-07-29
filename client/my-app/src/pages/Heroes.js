@@ -25,6 +25,7 @@ const Heroes = () => {
         <div className="heroDiv">
           {heroes.map((hero) => (
             <HeroCard className="heroCardDiv"
+              id={hero._id}
               name={hero.name}
               image={hero.image}
               otherName={hero.otherName}

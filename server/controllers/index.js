@@ -118,6 +118,20 @@ const updateHero = async (req, res) => {
   }
 };
 
+const updateVillain = async (req, res) => {
+  try {
+    const villain = req.body;
+    console.log(req.body);
+    const rest = await Villain.findByIdAndUpdate(req.params.id, villain);
+    if (!rest) {
+      res.status(500).send("Villain not found");
+    }
+    return res.status(200).json(rest);
+  } catch (error) {
+    return res.status(500).send(error.message);
+  }
+};
+
 const deleteHero = async (req, res) => {
   try {
     const deleted = await Hero.findByIdAndDelete(req.params.id);
@@ -150,5 +164,6 @@ module.exports = {
   getAllAnimes,
   getHeroId,
   updateHero,
+  updateVillain,
   deleteHero
 };

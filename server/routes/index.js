@@ -21,6 +21,7 @@ router.post("/organizations", controllers.createOrganization);
 
 //Update Routes
 router.put('/heroes/:id', controllers.updateHero)
+router.put('/villains/:id', controllers.updateVillain)
 
 
 //Delete Routes

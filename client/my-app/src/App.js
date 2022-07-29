@@ -6,6 +6,7 @@ import Animes from './pages/Animes';
 import Heroes from './pages/Heroes';
 import Villains from './pages/Villains';
 import Organizations from './pages/Organizations';
+import AddHero from './pages/AddHero';
 
 const API = 'http.//localhost:3001'
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/heroes" element={<Heroes API={API} />} />
           <Route path="/villains" element={<Villains API={API} />} />
           <Route path="/organizations" element={<Organizations API={API} />} />
+          <Route path="/AddHero" element={<AddHero API={API} />} />
         </Routes>
       </main>
     </div>

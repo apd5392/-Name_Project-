@@ -10,10 +10,9 @@ const main = async () => {
       name: "Frieza",
       otherName: [
         "Freezer, ",
-        "Freeza",
-        "F",
-        "Lord Frieza",
-        "Emperor Frieza",
+        "Freeza, ",
+        "Lord Frieza, ",
+        "Emperor Frieza, ",
         "Universal Emperor",
       ],
 
@@ -52,8 +51,8 @@ const main = async () => {
         "Pure Buu",
       ],
       anime: [
-        "Dragon Ball Z",
-        "Dragon Ball GT",
+        "Dragon Ball Z, ",
+        "Dragon Ball GT, ",
         "Dragon Ball Super",
       ],
       age: null,
